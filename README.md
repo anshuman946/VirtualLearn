@@ -173,52 +173,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
 
----
-
-## 📁 Project Structure
-
-\`\`\`
-virtulearn/
-├── app/                          # Next.js App Router
-│   ├── agents/                   # AI Agent interface pages
-│   ├── api/                      # API routes
-│   │   ├── agents/               # LangChain agent endpoints
-│   │   │   ├── process/          # Main agent processing
-│   │   │   ├── collaborative/    # Multi-agent sessions
-│   │   │   └── learning-path/    # Adaptive learning paths
-│   │   ├── ai/                   # AI integration endpoints
-│   │   ├── auth/                 # Authentication callbacks
-│   │   └── documents/            # Document processing
-│   ├── auth/                     # Authentication pages
-│   ├── dashboard/                # Main dashboard
-│   ├── documents/                # Document management
-│   ├── room/                     # Study room pages
-│   ├── globals.css               # Global styles and animations
-│   ├── layout.tsx                # Root layout
-│   └── page.tsx                  # Landing page
-├── components/                   # Reusable components
-│   ├── ui/                       # shadcn/ui components
-│   ├── agent-interface.tsx       # LangChain agent chat interface
-│   ├── collaborative-whiteboard.tsx
-│   ├── video-call.tsx
-│   └── voice-assistant.tsx
-├── lib/                          # Utility libraries
-│   ├── langchain-agents.ts       # Advanced LangChain agent implementation
-│   ├── ai-tutor.ts              # Basic AI tutoring logic
-│   ├── blob-storage.ts          # File storage utilities
-│   ├── supabase.ts              # Database client
-│   ├── voice-interaction.ts     # Voice API integration
-│   ├── webrtc.ts                # Video call management
-│   └── utils.ts                 # General utilities
-├── scripts/                     # Database and setup scripts
-│   └── supabase-schema.sql      # Database schema
-├── .env.local                   # Environment variables
-├── package.json                 # Dependencies
-├── tailwind.config.ts           # Tailwind configuration
-└── README.md                    # This file
-\`\`\`
-
----
 
 ## 🤖 AI Agent System
 
@@ -355,17 +309,3 @@ Add all environment variables in Vercel dashboard:
 
 ---
 
-## 🔒 Security & Privacy
-
-### **Data Protection**
-- **Row Level Security**: Database-level access control
-- **Authentication**: Secure user authentication with Supabase
-- **API Security**: Protected API endpoints with authentication
-- **File Security**: Secure file storage with access controls
-- **AI Privacy**: Conversations processed securely with OpenAI
-
-### **Privacy Features**
-- **Private Rooms**: Invite-only study sessions
-- **Data Encryption**: All data encrypted in transit and at rest
-- **User Control**: Users control their data and privacy settings
-- **Agent Transparency**: Clear indication of AI reasoning and sources
